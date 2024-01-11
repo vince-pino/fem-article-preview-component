@@ -85,7 +85,6 @@ button {
   padding: 20px;
   width: 30px;
   height: 30px;
-  cursor: pointer;
 
   display: flex;
   justify-content: center;
@@ -96,6 +95,7 @@ button {
   width: 16px;
   height: 16px;
   margin-right: 0;
+  cursor: pointer;
 }
 
 .tooltip {
@@ -131,10 +131,6 @@ button {
   border-color:  hsl(217, 19%, 35%) transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 .tooltiptext img {
   border-radius: 0;
   width: 20px;
@@ -151,3 +147,78 @@ footer {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 375px) {
+
+  main {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .image-container {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .image-container img {
+    border-radius: 10px 10px 0 0;
+    max-width: 323px;
+    aspect-ratio: 3 / 2;
+    object-position: top;
+  }
+
+  .text-container {
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .description {
+    margin-bottom: 24px;
+  }
+
+  .active-author {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 60px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0 0 10px 10px;
+
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    align-items: center;
+  }
+
+  .active {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: hsl(217, 19%, 35%);
+  }
+
+  .active div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(212, 23%, 69%);
+    font-size: 12px;
+  }
+
+  .active-btn {
+    padding: 10px;
+    background-color: white;
+  }
+
+  span img,
+  button {
+    cursor: pointer;
+  }
+
+  footer {
+    position: static;
+  }
+}
