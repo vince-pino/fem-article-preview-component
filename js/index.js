@@ -40,12 +40,12 @@
         authorEl.innerHTML = `
                             <span class="tooltiptext active">
                               <div>Share</div>
-                                <img src="../images/icon-facebook.svg" alt="">
-                                <img src="../images/icon-twitter.svg" alt="">
-                                <img src="../images/icon-pinterest.svg" alt="">
+                                <img src="images/icon-facebook.svg" alt="">
+                                <img src="images/icon-twitter.svg" alt="">
+                                <img src="images/icon-pinterest.svg" alt="">
                             </span>
                             <button class="share tooltip active-btn" onclick='handleClick()'>
-                              <img class="icon" src="../images/icon-share.svg" alt="">
+                              <img class="icon" src="images/icon-share.svg" alt="">
                             </button>
                             `;
       }
