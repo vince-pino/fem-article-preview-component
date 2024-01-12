@@ -14,7 +14,7 @@
         descriptionEl.style = "margin-bottom: 24px";
         authorEl.classList.remove('active-author');
         authorEl.innerHTML = `
-                              <img src="../images/avatar-michelle.jpg" alt="">
+                              <img src="images/avatar-michelle.jpg" alt="">
                               <div class="author-info">
                                 <div class="name">
                                   Michelle Appleton
@@ -27,9 +27,9 @@
                                 <img class="icon" src="images/icon-share.svg" alt="">
                                 <span class="tooltiptext">
                                   <div>Share</div>
-                                  <img src="../images/icon-facebook.svg" alt="">
-                                  <img src="../images/icon-twitter.svg" alt="">
-                                  <img src="../images/icon-pinterest.svg" alt="">
+                                  <img src="images/icon-facebook.svg" alt="">
+                                  <img src="images/icon-twitter.svg" alt="">
+                                  <img src="images/icon-pinterest.svg" alt="">
                                 </span>
                               </button>
                             `;
